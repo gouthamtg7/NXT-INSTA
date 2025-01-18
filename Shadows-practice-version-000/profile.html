@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | NXT INSTA</title>
+    <link rel="stylesheet" href="CSS\home.css">
+    <link rel="stylesheet" href="CSS\profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Nav bar as usual -->
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#" class="navbar-logo"><h1>NXT INSTA</h1></a>
+          <ul class="navbar-menu">
+            <li><a href="home.html" class="navbar-link"><img id="exit-img" src="https://img.icons8.com/pastel-glyph/64/EBEBEB/box-move-left.png" alt="box-move-left"/></a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- The profile information container -->
+    <main class="profile-info">
+        <!-- There are three parts to this part -> 1) (username_profile_pic) USERNAME heading , 2) User information and 3) User posts like instagram -->
+        <!-- The design is more like -> |    USERNAME    |
+                                        | user info      |
+                                        | user posts     | -->
+        <div class="profile-info-container">
+            <!-- First let's add the heading -->
+            <div class="profile-info-heading">
+                <!-- The image should have that border radius -->
+                <img class="profile-info-heading-profile-pic" src="IMAGES\tom-profile-pic.jpeg">
+                <h1 class="username-heading">TOM</h1>
+            </div>
+
+            <!-- Now, time for the user information -->
+            <div class="profile-info-user-info">
+                <p class="user-info-username">Username : Tom</p>
+                <p class="user-info-email id">Email ID : tom@bmsce.ac.in</p>
+                <p class="user-info-age">Age : 19</p>
+                <p class="user-info-college">College : BMS College of Engineering</p>
+                <p class="user-info-branch">Branch : AIML</p>
+                <p class="user-info-year">Year : 2nd</p>
+            </div>
+
+            <!-- Now, time for the posts information -->
+            <div class="profile-info-posts">
+                <div class="main-bar-nodes-container">
+                    <div class="main-bar-nodes">
+                        <div class="main-bar-node-1">
+                            <!-- The profile information line -->
+                            <div class="main-bar-node-1-profile-line">
+                                <a href="profile.html"><img class="main-bar-node-1-profile-img" src="IMAGES\tom-profile-pic.jpeg"></a>
+                                <a href="profile.html"><h3 class="main-bar-node-1-profile-name">Tom</h3></a>
+                            </div>
+
+                            <!-- The main content part  -->
+                            <div class="main-bar-node-1-content-bar">
+                                <p class="main-bar-node-1-content" id="main-bar-node-1-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nulla accusamus at tempora sint dicta consequuntur quasi harum. Odit magni magnam vero quo eius maxime accusamus quas distinctio fuga molestiae?</p>
+                            </div>
+
+                            <!-- Now the like and dislike part -->
+                            <div class="main-bar-node-1-reaction-bar">
+                                <button class="main-bar-node-1-like" id="update">Update</button>
+                                <button class="main-bar-node-1-like" id="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+</html>

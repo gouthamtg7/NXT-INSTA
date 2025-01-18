@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NXT INSTA</title>
+    <link rel="stylesheet" href="CSS\home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#" class="navbar-logo"><h1>NXT INSTA</h1></a>
+          <ul class="navbar-menu">
+            <li><a href="profile.html" class="navbar-link"><img id="profile-img" src="https://img.icons8.com/windows/50/EBEBEB/name.png" alt="name"/></a></li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <!-- Now the main section  -->
+    <main class="main-section">
+        <div class="main-section-container">
+        <!-- The main section has two main parts - 1) Side bar to the left and 2) Mid bar covering middle region -->
+            <!-- Let's tackle the side bar first  -->
+            <div class="side-bar">
+                <div class="side-bar-container">
+                    <!-- TOP TEAS -->
+                    <div class="side-bar-nodes">
+                        <img class="side-bar-node-icon" id="side-bar-icon-top-teas" width="50" height="50" src="https://img.icons8.com/ios/50/EBEBEB/compass--v1.png" alt="compass--v1"/>
+                        <a href="#"><h3 class="side-bar-node-title" id="side-bar-top-teas">Feed</h3></a>
+                    </div>
+
+                    <!-- CREATE POSTS -->
+                    <div class="side-bar-nodes">
+                        <img class="side-bar-node-icon" id="side-bar-icon-create" width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/EBEBEB/plus.png" alt="plus"/>
+                        <a href="#"><h3 class="side-bar-node-title" id="side-bar-create">Create</h3></a>
+                    </div>
+
+                    <!-- PROFILE PAGE -->
+                    <div class="side-bar-nodes">
+                        <img class="side-bar-node-icon" id="side-bar-icon-profile" width="50" height="50" src="https://img.icons8.com/windows/50/EBEBEB/name.png" alt="name"/>
+                        <a href="profile.html"><h3 class="side-bar-node-title" id="side-bar-profile">Profile</h3></a>
+                    </div>
+
+                    <!-- LOGOUT OPTION -->
+                    <div class="side-bar-nodes">
+                        <img class="side-bar-node-icon" id="side-bar-icon-profile" width="50" height="50" src="https://img.icons8.com/pastel-glyph/64/EBEBEB/box-move-left.png" alt="box-move-left"/>
+                        <a href="welcome.html"><h3 class="side-bar-node-title" id="side-bar-logout">Logout</h3></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Now time for the main bar -->
+            <div class="main-bar">
+                <!-- The main heading for the main bar content  -->
+                <div class="main-bar-container">
+                    <div class="main-bar-heading">
+                        <!-- This heading will change as you click on the side bar options and that title will appear here -->
+                        <h2 class="main-bar-heading" id="feeds-heading">Feed</h2>
+                    </div>
+                </div>
+
+                <!-- Let's design the Top Teas section's main bar nodes, create UI will appear dynamically -->
+                <!-- Each node has -> (Profile_pic) (Profile_name)
+                                      (Post content -> <p></p>)
+                                      (Like) (dislike)  -->
+
+                <div class="main-bar-nodes-container">
+                    <div class="main-bar-nodes">
+                        <div class="main-bar-node-1">
+                            
+                            <div class="main-bar-node-1-profile-line">
+                                <a href="profile.html"><img class="main-bar-node-1-profile-img" src="IMAGES\tom-profile-pic.jpeg"></a>
+                                <a href="profile.html"><h3 class="main-bar-node-1-profile-name">Tom</h3></a>
+                            </div>
+
+                            
+                            <div class="main-bar-node-1-content-bar">
+                                <p class="main-bar-node-1-content" id="main-bar-node-1-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nulla accusamus at tempora sint dicta consequuntur quasi harum. Odit magni magnam vero quo eius maxime accusamus quas distinctio fuga molestiae?</p>
+                            </div>
+
+                            
+                            <div class="main-bar-node-1-reaction-bar">
+                                <button class="main-bar-node-1-like" id="like">Like</button>
+                                <button class="main-bar-node-1-like" id="dislike">Dislike</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </main>
+</body>
+<script src="SCRIPTS\home.js"></script>
+</html>

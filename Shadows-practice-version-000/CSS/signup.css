@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #121212;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar h1 {
+    display: inline-block;
+    color: oklch(0.719 0.119 209.76);
+    font-size: 2rem;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-side::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tagline:hover {
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    color: oklch(0.719 0.119 209.76);
+    font-size: 1.2rem;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px oklch(0.719 0.119 209.76 / 0.3);
+    width: 350px;
+}
+
+.form-container h2 {
+    margin-bottom: 1.5rem;
+    color: oklch(0.719 0.119 209.76);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: oklch(0.719 0.119 209.76);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+}
+
+.form-container p {
+    margin-top: 1.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.form-container a {
+    color: oklch(0.719 0.119 209.76);
+    text-decoration: none;
+}
